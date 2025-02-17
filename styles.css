@@ -1,0 +1,154 @@
+/* Import Fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ambiguity:ital,wght@0,400;0,700;1,400&family=Blogger+Sans:wght@400;700&display=swap');
+
+/* Global Styles */
+body {
+    background-color: #add8e6;  /* Light Blue */
+    font-family: 'Ambiguity', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    background-color: #87CEEB;  /* Slightly Darker Light Blue */
+    padding: 20px;
+    font-family: 'Blogger Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Content Container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Blogger Sans', sans-serif;
+}
+
+/* Links */
+a {
+    color: #005f99;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Ambiguity', sans-serif;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    transform-origin: center;
+}
+
+button:hover {
+    background-color: #003d66;
+    transform: scale(1.1);
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a i {
+    font-size: 22px;
+}
+
+.instagram {
+    background-color: #E4405F;
+}
+
+.tiktok {
+    background: #0c0c0c;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+/* Floating Elements */
+.floating-container {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;  /* Increased width for better visibility */
+    height: 100%;
+    overflow: hidden;
+}
+
+.floating-left {
+    left: 0;
+}
+
+.floating-right {
+    right: 0;
+}
+
+/* Hearts & Flowers */
+.floating-item {
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+    opacity: 0;
+    animation: floatUp 6s linear forwards;
+}
+
+/* Animation for floating effect */
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
